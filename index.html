@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Professional Website</title>
+
+<style>
+
+/* GLOBAL STYLE */
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:linear-gradient(120deg,#4facfe,#00f2fe,#43e97b,#f093fb);
+background-size:400% 400%;
+animation:bgmove 12s infinite alternate;
+color:#333;
+}
+
+@keyframes bgmove{
+0%{background-position:left}
+100%{background-position:right}
+}
+
+/* NAVBAR */
+
+nav{
+background:rgba(0,0,0,0.8);
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:white;
+margin:0;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+margin:0 15px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00f2fe;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:#ff512f;
+color:white;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+margin-top:15px;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:#dd2476;
+}
+
+/* SECTION STYLE */
+
+section{
+padding:60px 20px;
+text-align:center;
+background:white;
+margin:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:linear-gradient(120deg,#43e97b,#38f9d7);
+padding:30px;
+border-radius:10px;
+color:#333;
+transition:0.4s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:8px;
+}
+
+/* VIDEO */
+
+video{
+width:80%;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+input,textarea{
+width:80%;
+padding:10px;
+margin:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button.submit{
+background:#4facfe;
+color:white;
+border:none;
+padding:12px 20px;
+cursor:pointer;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<h2>MyWebsite</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<div class="hero" id="home">
+
+<h1>Welcome To My Professional Website</h1>
+<p>Create • Grow • Earn Online</p>
+
+<button onclick="showMessage()">Get Started</button>
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+This is my professional website where I can add my business links,
+affiliate products, videos and images.
+</p>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2>My Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Affiliate Marketing</h3>
+<p>Promoting products and earning commission online.</p>
+</div>
+
+<div class="card">
+<h3>Content Creation</h3>
+<p>Creating videos and social media content.</p>
+</div>
+
+<div class="card">
+<h3>Digital Business</h3>
+<p>Helping brands grow with digital marketing.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2>Image Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://picsum.photos/300/200?1">
+<img src="https://picsum.photos/300/200?2">
+<img src="https://picsum.photos/300/200?3">
+<img src="https://picsum.photos/300/200?4">
+
+</div>
+
+</section>
+
+<!-- VIDEO -->
+
+<section>
+
+<h2>My Video</h2>
+
+<video controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<input type="text" placeholder="Your Name"><br>
+<input type="email" placeholder="Your Email"><br>
+<textarea placeholder="Message"></textarea><br>
+
+<button class="submit">Send Message</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 My Professional Website</p>
+
+</footer>
+
+<script>
+
+/* JAVASCRIPT */
+
+function showMessage(){
+
+alert("Welcome to my professional website!");
+
+}
+
+</script>
+
+</body>
+  </html>
